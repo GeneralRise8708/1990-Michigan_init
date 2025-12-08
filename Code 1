@@ -1,5 +1,15 @@
 e.HomeStateText = "Home City:";
 
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #00237F;
+  border-color: #C7092B;
+}`
+;
+document.head.appendChild(style_overwrite);
+
+
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
