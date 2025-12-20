@@ -713,7 +713,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Alcona",
             "abbr": "Alcona",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 3358,
             "poll_closing_time": 25,
             "winner_take_all_flg": 1,
@@ -726,7 +726,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Alger",
             "abbr": "Alger",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 3531,
             "poll_closing_time": 420,
             "winner_take_all_flg": 1,
@@ -739,7 +739,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Allegan",
             "abbr": "Allegan",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 24520,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -752,7 +752,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Alpena",
             "abbr": "Alpena",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 8710,
             "poll_closing_time": 150,
             "winner_take_all_flg": 1,
@@ -765,7 +765,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Antrim",
             "abbr": "Antrim",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 6631,
             "poll_closing_time": 300,
             "winner_take_all_flg": 1,
@@ -778,7 +778,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Arenac",
             "abbr": "Arenac",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 4269,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -791,7 +791,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Baraga",
             "abbr": "Baraga",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 2491,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -804,7 +804,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Barry",
             "abbr": "Barry",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 14543,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -817,7 +817,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Bay",
             "abbr": "Bay",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 34766,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -830,7 +830,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Benzie",
             "abbr": "Benzie",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 4251,
             "poll_closing_time": 60,
             "winner_take_all_flg": 1,
@@ -843,7 +843,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Berrien",
             "abbr": "Berrien",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 37845,
             "poll_closing_time": 360,
             "winner_take_all_flg": 1,
@@ -856,7 +856,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Branch",
             "abbr": "Branch",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 9789,
             "poll_closing_time": 300,
             "winner_take_all_flg": 1,
@@ -869,7 +869,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Calhoun",
             "abbr": "Calhoun",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 36196,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -882,7 +882,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Cass",
             "abbr": "Cass",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 10505,
             "poll_closing_time": 10,
             "winner_take_all_flg": 1,
@@ -895,7 +895,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Charlevoix",
             "abbr": "Charlevoix",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 7113,
             "poll_closing_time": 240,
             "winner_take_all_flg": 1,
@@ -1597,7 +1597,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Otsego",
             "abbr": "Otsego",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 5703,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1610,7 +1610,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Ottawa",
             "abbr": "Ottawa",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 60344,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1623,7 +1623,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Presque Isle",
             "abbr": "Presque_Isle",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 4547,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1636,7 +1636,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Roscommon",
             "abbr": "Roscommon",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 7422,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1649,7 +1649,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Saginaw",
             "abbr": "Saginaw",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 65878,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1662,7 +1662,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "St. Clair",
             "abbr": "St_Clair",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 39189,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1675,7 +1675,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "St. Joseph",
             "abbr": "St_Joseph",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 14155,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1688,7 +1688,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Sanilac",
             "abbr": "Sanilac",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 12566,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1701,7 +1701,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Schoolcraft",
             "abbr": "Schoolcraft",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 3128,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1714,7 +1714,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Shiawassee",
             "abbr": "Shiawassee",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 24128,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1727,7 +1727,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Tuscola",
             "abbr": "Tuscola",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 15268,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1740,7 +1740,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Van Buren",
             "abbr": "Van_Buren",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 17210,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1753,7 +1753,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Washtenaw",
             "abbr": "Washtenaw",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 77893,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1766,7 +1766,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Wayne",
             "abbr": "Wayne",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 489617,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1779,7 +1779,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Wexford",
             "abbr": "Wexford",
-            "electoral_votes": 0,
+            "electoral_votes": 1,
             "popular_votes": 7995,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
