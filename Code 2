@@ -10224,6 +10224,11 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
+campaignTrail_temp.candidate_image_url = "https://i.imgur.com/ShCpKNN.png";
+campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/waEi3lW.png";
+campaignTrail_temp.candidate_last_name = "Engler";
+campaignTrail_temp.running_mate_last_name = "Binsfield";
+
 
 
 campaignTrail_temp.jet_data = [{
@@ -10233,7 +10238,14 @@ campaignTrail_temp.jet_data = [{
         "202": "Roundtree/Others"
     },
     "endings_enabled": false,
-    "ending_data": {}
+    "ending_data": {},
+    "banner_data": {
+        "canName": "Engler",
+        "canImage": "https://i.imgur.com/ShCpKNN.png",
+        "runName": "Binsfield",
+        "runImage": "https://i.imgur.com/waEi3lW.png"
+    },
+    "banner_enabled": true
 }
 ]
 
