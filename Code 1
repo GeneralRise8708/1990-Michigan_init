@@ -314,6 +314,40 @@ style.innerHTML = `
   p#credits {
     color: white !important;
   }
+#state_info {
+  margin: 5% 0 0;
+  height: 120%;
+}
+.visit_text {
+  overflow-wrap: normal;
+  width: 700px;
+  right: 25%; /* If we decide to port to NCT, change this to "left: 39%;" */
+  position: absolute;
+}
+
+  .inner_window_question h3 {
+    background: #00237F !important;
+    color: #FFFFFF !important;
+  }
+#state_info h3 {
+  background-color: #00237F;
+  color: white;
+}
+#overall_result h3 {
+  background-color: #00237F;
+  color: white;
+}
+  .overlay_window h3 {
+    background-color: #00237F;
+    color: white;
+  }
+body {
+    background-position: center;
+    background-size: cover;
+}
+#menu_container, #overall_result_container, #state_result_container {
+			  background: transparent !important;
+			}
 `;
 
 document.head.appendChild(style);
