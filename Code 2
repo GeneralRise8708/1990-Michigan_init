@@ -7980,7 +7980,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 2017,
-            "state_multiplier": 0.8295
+            "state_multiplier": 0.0395
         }
     },
     {
@@ -8070,7 +8070,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 2017,
-            "state_multiplier": 0.0092
+            "state_multiplier": -0.4908
         }
     },
     {
@@ -8160,7 +8160,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 2017,
-            "state_multiplier": 0.0699
+            "state_multiplier": -0.0001
         }
     },
     {
@@ -10225,7 +10225,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 campaignTrail_temp.candidate_image_url = "https://i.imgur.com/ShCpKNN.png";
-campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/waEi3lW.png";
+campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/eFXHrZt.png";
 campaignTrail_temp.candidate_last_name = "Engler";
 campaignTrail_temp.running_mate_last_name = "Binsfield";
 
@@ -10243,12 +10243,12 @@ endingPicker = (out, totv, aa, quickstats) => {
         }, 50);
     }
 
-    if(quickstats[1] >= 50) {
+    if(quickstats[1] >= 49.5) {
         setImage("");
         return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Wow! You actually did it! You have just won against a popular incumbent! You were the underdog by 15 points. It was supposed to be a blowout. Blanchard won 68% of the votes in the last election. But you proved them wrong, John. So how did you end up on top? Well, Blanchard's scandals really affected his performance, and exposing the secrets he had been hiding increased your chances of winning. So now that you are governor, you could be as popular as Blanchard was. Could you run for re-election in 1994? Well, whatever you choose is your business, John. Good Luck!</p>
 `;
     }
-    if(quickstats[1] < 50) {
+    if(quickstats[1] < 49.5) {
         setImage("");
         return `<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. But you performed better than anyone would have expected! You were the underdog by 15 points, but you did better than losing by 15! Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>`;
     }
@@ -10275,7 +10275,7 @@ campaignTrail_temp.jet_data = [{
             "id": 1768690512687,
             "variable": "1",
             "operator": ">=",
-            "amount": "50",
+            "amount": "49.5",
             "endingImage": "",
             "endingText": "<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Wow! You actually did it! You have just won against a popular incumbent! You were the underdog by 15 points. It was supposed to be a blowout. Blanchard won 68% of the votes in the last election. But you proved them wrong, John. So how did you end up on top? Well, Blanchard's scandals really affected his performance, and exposing the secrets he had been hiding increased your chances of winning. So now that you are governor, you could be as popular as Blanchard was. Could you run for re-election in 1994? Well, whatever you choose is your business, John. Good Luck!</p>\n"
         },
@@ -10283,9 +10283,9 @@ campaignTrail_temp.jet_data = [{
             "id": 1768690615662,
             "variable": "1",
             "operator": "<",
-            "amount": "50",
+            "amount": "49.5",
             "endingImage": "",
-            "endingText": "<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. But you performed better than anyone would have expected! You were the underdog by 15 points, but you did better than losing by 15! Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>"
+            "endingText": "<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>"
         },
         "1768690679058": {
             "id": 1768690679058,
@@ -10308,7 +10308,7 @@ campaignTrail_temp.jet_data = [{
         "canName": "Engler",
         "canImage": "https://i.imgur.com/ShCpKNN.png",
         "runName": "Binsfield",
-        "runImage": "https://i.imgur.com/waEi3lW.png"
+        "runImage": "https://i.imgur.com/eFXHrZt.png"
     },
     "banner_enabled": true
 }
