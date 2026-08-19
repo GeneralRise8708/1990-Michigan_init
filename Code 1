@@ -64,7 +64,7 @@ campaignTrail_temp.temp_election_list = [
     }
 ]
 
-campaignTrail_temp.credits = "General_Rise8708, with the banner made by E. <br> Thanks to Diamondy for coding advice and CatBoxXD for the map. Thanks to theanswerisme for some of the pictures and thanks to TheMcCain for visual effects!"
+campaignTrail_temp.credits = "General_Rise8708, with the banner made by E. <br> Thanks to Diamondy for coding advice and CatBoxXD for the map. Thanks to theanswerisme for some of the pictures and thanks to TheMcCain for visual effects, and thanks to u/Bernie_El-Sayed for bugfixing."
 
 campaignTrail_temp.candidate_json = [
     {
