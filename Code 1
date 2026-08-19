@@ -323,6 +323,156 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e.difficulty_level_json = [{"model":"campaign_trail.difficulty_level","pk":1,"fields":{"name":"Guaranteed","multiplier":1.5}},{"model":"campaign_trail.difficulty_level","pk":2,"fields":{"name":"Babymode","multiplier":1.4}},{"model":"campaign_trail.difficulty_level","pk":3,"fields":{"name":"Cakewalk","multiplier":1.3}},{"model":"campaign_trail.difficulty_level","pk":4,"fields":{"name":"Very Easy","multiplier":1.2}},{"model":"campaign_trail.difficulty_level","pk":5,"fields":{"name":"Easy","multiplier":1.1}},{"model":"campaign_trail.difficulty_level","pk":6,"fields":{"name":"Quite Easy","multiplier":1.05}},{"model":"campaign_trail.difficulty_level","pk":7,"fields":{"name":"Normal","multiplier":1.00}},{"model":"campaign_trail.difficulty_level","pk":8,"fields":{"name":"Challenging","multiplier":0.95}},{"model":"campaign_trail.difficulty_level","pk":9,"fields":{"name":"Hard","multiplier":0.9}},{"model":"campaign_trail.difficulty_level","pk":10,"fields":{"name":"Very Hard","multiplier":0.85}},{"model":"campaign_trail.difficulty_level","pk":11,"fields":{"name":"Impossible","multiplier":0.8}},{"model":"campaign_trail.difficulty_level","pk":12,"fields":{"name":"Unthinkable","multiplier":0.7}},{"model":"campaign_trail.difficulty_level","pk":13,"fields":{"name":"Blowout","multiplier":0.6}},{"model":"campaign_trail.difficulty_level","pk":14,"fields":{"name":"Disaster","multiplier":0.5}},{"model":"campaign_trail.difficulty_level","pk":15,"fields":{"name":"Calamity","multiplier":0.4}}]
 
+
+const stateRaceVpSelect = window.vpSelect;
+if (typeof stateRaceVpSelect === "function") {
+  window.vpSelect = function(event) {
+    stateRaceVpSelect.call(this, event);
+    const runningMateContinue = document.getElementById("running_mate_id_button");
+    if (runningMateContinue) {
+      runningMateContinue.click();
+    }
+  };
+}
+
+document.getElementById("inner_window_1").children[0].innerHTML = `Do you have what it takes to win a State Election?</h3>`
+
+document.getElementById("inner_window_1").children[1].innerHTML = `  <li>Select a year and a candidate to find out.</li>  <li>You will answer questions about your platform and positions, and also about your campaign strategy.</li>  <li>The answers will affect your popularity for better or worse, both state-wide and in individual counties.</li>  <li>Walk the fine line between appealing to your base and winning a majority of the votes.</li> <li>Additionally, the game has been modified to support unofficial, community-made custom scenarios. (or, mods.)</li>  <li>To load a mod, scroll down below to view the mod selection, select a mod, click submit, and then press "Click Here to Begin!".</li>  <li>Alternatively, click the 'Custom Mod Loader' button to load a mod by copying and pasting the codes, or even save them!</li>`
+
+function modifyForm() {
+  try {
+    const form = document.querySelector('form[name="game_type_selection"]');
+    const select = form.querySelector('select[name="game_type_id"]');
+
+    const option = select.querySelector('option[value="1"]');
+    if (option) option.textContent = 'Default (Plurality Voting)';
+
+    const alternate = select.querySelector('option[value="2"]');
+    if (alternate) alternate.remove();
+  } catch {}
+}
+window.setInterval(modifyForm,200)
+
+function changeOpponentSelectionDescription() {
+  try {
+    const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+    if (opponentSelectionDescription) {
+      opponentSelectionDescription.innerHTML = `<p><strong>Use a plurality voting system.</strong></p><p>Michigan elects its governor by a statewide popular vote. Whichever candidate receives the most votes across the state wins the election.</p><p>This method can make it hard for third-party candidates to win and can encourage tactical voting and wasted votes. On the other hand, it provides a simple statewide result and makes every vote count equally.</p>`;
+    }
+  } catch {}
+}
+window.setInterval(changeOpponentSelectionDescription,200)
+
+let observerRunning = false;
+async function handleMutations(mutationsList, observer) {
+    if (observerRunning) return;
+    observerRunning = true;
+
+    observer.disconnect();
+
+    try {
+        const pvswitcher_button = document.getElementById("pvswitcher");
+        if (pvswitcher_button && pvswitcher_button.textContent === "Switch to State Estimate") {
+            pvswitcher_button.textContent = "Switch to County Estimate";
+        }
+
+        const ev_button = document.getElementById("ev_est");
+        if (ev_button && ev_button.textContent !== "Counties Won Estimate") {
+            ev_button.textContent = "Counties Won Estimate";
+        }
+
+        const state_info = document.getElementById("state_info");
+        if (state_info && state_info.children.length > 0) {
+            const state_info_header = state_info.children[0];
+            if (state_info_header && state_info_header.textContent.includes("STATE SUMMARY")) {
+                state_info_header.textContent = "COUNTY SUMMARY";
+            }
+        }
+
+        const overall_result = document.getElementById("overall_result");
+        if (overall_result && overall_result.children.length > 0) {
+            const overall_result_header = overall_result.children[0];
+            if (overall_result_header && (overall_result_header.textContent.includes("ELECTORAL VOTES") || overall_result_header.textContent.includes("DELEGATES"))) {
+                overall_result_header.textContent = "COUNTIES WON";
+            }
+        }
+
+        const state_result = document.getElementById("state_result");
+        if (state_result && state_result.children.length > 0) {
+            const state_result_header = state_result.children[0];
+            if (state_result_header && state_result_header.textContent.includes("STATE RESULTS")) {
+                state_result_header.textContent = "COUNTY RESULTS";
+            }
+
+            const state_result_text = state_result.children[1];
+            if (state_result_text) {
+                state_result_text.textContent = state_result_text.textContent
+                    .replace(/state/g, "county")
+                    .replace(/State/g, "County");
+            }
+        }
+
+        document.querySelectorAll("table th, .final_results_table th").forEach((th) => {
+            if (th.textContent.trim() === "Electoral Votes") {
+                th.textContent = "Counties Won";
+            }
+        });
+
+        const state_results_button = document.getElementById("state_results_button");
+        if (state_results_button && state_results_button.textContent === "Results by State") {
+            state_results_button.textContent = "Results by County";
+        }
+
+        document.querySelectorAll(".title_h3, h3").forEach((header) => {
+            if (header.textContent === "Election Results and Data by State") {
+                header.textContent = "Election Results and Data by County";
+            }
+        });
+
+        const sort_tab = document.getElementById("sort_tab");
+        if (sort_tab) {
+            const queryTwo = sort_tab.querySelector('option[value="2"]');
+            if (queryTwo) queryTwo.remove();
+
+            const queryThree = sort_tab.querySelector('option[value="3"]');
+            if (queryThree && queryThree.textContent === "Closest States") {
+                queryThree.textContent = "Closest Counties";
+            }
+        }
+
+        const sort_tab_area = document.getElementById("sort_tab_area");
+        if (sort_tab_area && sort_tab_area.firstElementChild) {
+            const sort_text = sort_tab_area.firstElementChild.firstChild;
+            if (sort_text && sort_text.textContent && sort_text.textContent.startsWith("View states by:")) {
+                sort_text.textContent = "View counties by:" + sort_text.textContent.slice("View states by:".length);
+            }
+        }
+
+        const state_tab_area = document.getElementById("state_tab_area");
+        if (state_tab_area && state_tab_area.firstElementChild) {
+            const state_text = state_tab_area.firstElementChild.firstChild;
+            if (state_text && state_text.textContent && state_text.textContent.startsWith("Select a state:")) {
+                state_text.textContent = "Select a County:" + state_text.textContent.slice("Select a state:".length);
+            }
+        }
+
+    } catch (err) {
+        console.error("Observer error:", err);
+    } finally {
+        const gameWindow = document.getElementById("game_window");
+        if (gameWindow) {
+            observer.observe(gameWindow, { childList: true, subtree: true });
+        }
+        observerRunning = false;
+    }
+}
+
+let singleObserver = new MutationObserver(handleMutations);
+const gameWindow = document.getElementById("game_window");
+if (gameWindow) {
+    singleObserver.observe(gameWindow, { childList: true, subtree: true });
+}
+
 //#endcode
 
 let style = document.createElement('style');
