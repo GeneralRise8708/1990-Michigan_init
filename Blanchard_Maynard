@@ -10234,19 +10234,18 @@ endingPicker = (out, totv, aa, quickstats) => {
         }, 50);
     }
 
-    if(quickstats[1] < 49.5) {
-        setImage("https://i.imgur.com/ShCpKNN.png");
-        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Governor Blanchard, you either screwed up badly or your scandals destroyed your entire campaign. This is considered one of the biggest upsets since Harry Truman won the election of 1948. You were leading by 15 points in August, but Engler had the upperhand. Either way, your political career is not over. You could go on to do something else or retire. The choice is up to you, James. Good Luck! </p>
-`;
-    }
-    if(quickstats[1] >= 49.5) {
-        setImage("https://i.imgur.com/H1A6F4Y.png");
-        return `<h3>BLANCHARD RE-ELECTED TO A THIRD TERM!!!</h3><p>Despite the scandals that affected your campaign, you have still won the election. You can now continue your tenure as governor without having to move out of the Governor's Mansion. But what you do in your third term is your choice. Good Luck!</p>`;
-    }
     if(quickstats[1] >= 70) {
         setImage("");
         return `<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>`;
     }
+
+    if(quickstats[1] < 49.5) {
+        setImage("https://i.imgur.com/ShCpKNN.png");
+        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Governor Blanchard, you either screwed up badly or your scandals destroyed your entire campaign. This is considered one of the biggest upsets since Harry Truman won the election of 1948. You were leading by 15 points in August, but Engler had the upperhand. Either way, your political career is not over. You could go on to do something else or retire. The choice is up to you, James. Good Luck! </p>`;
+    }
+
+    setImage("https://i.imgur.com/H1A6F4Y.png");
+    return `<h3>BLANCHARD RE-ELECTED TO A THIRD TERM!!!</h3><p>Despite the scandals that affected your campaign, you have still won the election. You can now continue your tenure as governor without having to move out of the Governor's Mansion. But what you do in your third term is your choice. Good Luck!</p>`;
 }
 
 
@@ -10281,37 +10280,8 @@ endingPicker = (out, totv, aa, quickstats) => {
 
 
 
-endingPicker = (out, totv, aa, quickstats) => {
 
-    function setImage(url) {
-        if(url == '' || url == null) return;
-        let interval = setInterval(function () {
-            img = document.getElementsByClassName("person_image")[0];
-            if (img != null) {
-                img.src = url;
-                clearInterval(interval);
-            }
-        }, 50);
-    }
 
-    if(quickstats[1] >= 49.5) {
-        setImage("");
-        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Wow! You actually did it! You have just won against a popular incumbent! You were the underdog by 15 points. It was supposed to be a blowout. Blanchard won 68% of the votes in the last election. But you proved them wrong, John. So how did you end up on top? Well, Blanchard's scandals really affected his performance, and exposing the secrets he had been hiding increased your chances of winning. So now that you are governor, you could be as popular as Blanchard was. Could you run for re-election in 1994? Well, whatever you choose is your business, John. Good Luck!</p>
-`;
-    }
-    if(quickstats[1] < 49.5) {
-        setImage("");
-        return `<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. But you performed better than anyone would have expected! You were the underdog by 15 points, but you did better than losing by 15! Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>`;
-    }
-    if(quickstats[1] >= 70) {
-        setImage("");
-        return `<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>`;
-    }
-    if(quickstats[1] <= 30) {
-        setImage("");
-        return `<h3>YOU ARE A NOOB!!!</h3><p> Even William Lucas did better than you....</p>`;
-    }
-}
 
 
 
@@ -10345,37 +10315,8 @@ endingPicker = (out, totv, aa, quickstats) => {
 
 
 
-endingPicker = (out, totv, aa, quickstats) => {
 
-    function setImage(url) {
-        if(url == '' || url == null) return;
-        let interval = setInterval(function () {
-            img = document.getElementsByClassName("person_image")[0];
-            if (img != null) {
-                img.src = url;
-                clearInterval(interval);
-            }
-        }, 50);
-    }
 
-    if(quickstats[1] >= 49.5) {
-        setImage("");
-        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Wow! You actually did it! You have just won against a popular incumbent! You were the underdog by 15 points. It was supposed to be a blowout. Blanchard won 68% of the votes in the last election. But you proved them wrong, John. So how did you end up on top? Well, Blanchard's scandals really affected his performance, and exposing the secrets he had been hiding increased your chances of winning. So now that you are governor, you could be as popular as Blanchard was. Could you run for re-election in 1994? Well, whatever you choose is your business, John. Good Luck!</p>
-`;
-    }
-    if(quickstats[1] < 49.5) {
-        setImage("");
-        return `<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. But you performed better than anyone would have expected! You were the underdog by 15 points, but you did better than losing by 15! Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>`;
-    }
-    if(quickstats[1] >= 70) {
-        setImage("");
-        return `<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>`;
-    }
-    if(quickstats[1] <= 30) {
-        setImage("");
-        return `<h3>YOU ARE A NOOB!!!</h3><p> Even William Lucas did better than you....</p>`;
-    }
-}
 
 
 
@@ -10408,38 +10349,6 @@ endingPicker = (out, totv, aa, quickstats) => {
 
 
 
-
-endingPicker = (out, totv, aa, quickstats) => {
-
-    function setImage(url) {
-        if(url == '' || url == null) return;
-        let interval = setInterval(function () {
-            img = document.getElementsByClassName("person_image")[0];
-            if (img != null) {
-                img.src = url;
-                clearInterval(interval);
-            }
-        }, 50);
-    }
-
-    if(quickstats[1] >= 49.5) {
-        setImage("");
-        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Wow! You actually did it! You have just won against a popular incumbent! You were the underdog by 15 points. It was supposed to be a blowout. Blanchard won 68% of the votes in the last election. But you proved them wrong, John. So how did you end up on top? Well, Blanchard's scandals really affected his performance, and exposing the secrets he had been hiding increased your chances of winning. So now that you are governor, you could be as popular as Blanchard was. Could you run for re-election in 1994? Well, whatever you choose is your business, John. Good Luck!</p>
-`;
-    }
-    if(quickstats[1] < 49.5) {
-        setImage("");
-        return `<h3>ENGLER LOSES TO INCUMBENT BLANCHARD!!!</h3><p>Well, this was expected. Your chances of winning were low, but not impossible. But you performed better than anyone would have expected! You were the underdog by 15 points, but you did better than losing by 15! Your political career is not over, and you are still a popular choice to run again in 1994. Will you return for a second shot or return to the Senate? The choice is yours. Good Luck!</p>`;
-    }
-    if(quickstats[1] >= 70) {
-        setImage("");
-        return `<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>`;
-    }
-    if(quickstats[1] <= 30) {
-        setImage("");
-        return `<h3>YOU ARE A NOOB!!!</h3><p> Even William Lucas did better than you....</p>`;
-    }
-}
 
 
 
@@ -10468,6 +10377,14 @@ campaignTrail_temp.jet_data = [{
     },
     "endings_enabled": true,
     "ending_data": {
+        "1768690679058": {
+            "id": 1768690679058,
+            "variable": "1",
+            "operator": ">=",
+            "amount": "70",
+            "endingImage": "",
+            "endingText": "<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>"
+        },
         "1768690512687": {
             "id": 1768690512687,
             "variable": "1",
@@ -10483,14 +10400,6 @@ campaignTrail_temp.jet_data = [{
             "amount": "49.5",
             "endingImage": "https://i.imgur.com/H1A6F4Y.png",
             "endingText": "<h3>BLANCHARD RE-ELECTED TO A THIRD TERM!!!</h3><p>Despite the scandals that affected your campaign, you have still won the election. You can now continue your tenure as governor without having to move out of the Governor's Mansion. But what you do in your third term is your choice. Good Luck!</p>"
-        },
-        "1768690679058": {
-            "id": 1768690679058,
-            "variable": "1",
-            "operator": ">=",
-            "amount": "70",
-            "endingImage": "",
-            "endingText": "<h3>YOU CHEATED!!!</h3><p>You either used benefit checker or bigshot. Press play again and play the game right this time.</p>"
         }
     },
     "banner_data": {
