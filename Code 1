@@ -44,7 +44,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2016,
             "display_year": "1990 MI",
-            "summary": " During the middle of President George H.W. Bush's term, the 1990 Michigan Governors Race starts as a projected win for current Governor James Blanchard. However, current Michigan Senate Majority Leader John Engler is running to prove otherwise. Outside Michigan, the U.S. is again at war. The Gulf War started back in August and has proven to be unpopular for Republicans. Of course, Blanchard is the favorite, but could Engler prove this statement wrong? \n\n<ul><li> Current Governor Blanchard must reflect on his term and keep his distance from the scandals around him and his campaign.</li><li> John Engler is the underdog and must attack Blanchard about the skeletons in his closet if he wants any chance of winning this race.</li></ul>",
+            "summary": "<p>James Blanchard seeks a third term as Governor of Michigan while State Senate Majority Leader John Engler hopes to pull off an upset. Blanchard begins the 1990 election as the clear favorite, but controversies surrounding his administration and campaign give Engler an opening.</p> <ul><li>Blanchard will attempt to emphasize his record as governor while distancing himself from the scandals surrounding his administration and campaign.</li><li>Engler will try to portray Blanchard as a vulnerable incumbent and make questions of ethics and corruption central to his underdog campaign.</li></ul>",
             "image_url": "https://i.imgur.com/PO0sZJn.png",
             "winning_electoral_vote_number": 0,
             "advisor_url": "https://i.imgur.com/gZc7zod.png",
