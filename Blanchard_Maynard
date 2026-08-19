@@ -10570,7 +10570,7 @@ campaignTrail_temp.answer_feedback_json = [
         "pk": 20826,
         "fields": {
             "answer": 20825,
-            "candidate": 200,
+            "candidate": 201,
             "answer_feedback": "Mrs. Griffiths is upset. Very upset. She resigns from her position, leaving the Lt Governor's seat open. This is not a good look for you. "
         }
     },
@@ -10633,7 +10633,7 @@ campaignTrail_temp.answer_feedback_json = [
         "pk": 20859,
         "fields": {
             "answer": 5041,
-            "candidate": 200,
+            "candidate": 201,
             "answer_feedback": "This is a great response and one that proves to be helpful for your campaign! "
         }
     },
