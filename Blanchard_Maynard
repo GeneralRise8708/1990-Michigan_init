@@ -11159,11 +11159,11 @@ endingPicker = (out, totv, aa, quickstats) => {
 
     if(quickstats[1] < 49.5) {
         setImage("https://i.imgur.com/ShCpKNN.png");
-        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Governor Blanchard, you either screwed up badly or your scandals destroyed your entire campaign. This is considered one of the biggest upsets since Harry Truman won the election of 1948. You were leading by 15 points in August, but Engler had the upperhand. Either way, your political career is not over. You could go on to do something else or retire. The choice is up to you, James. Good Luck! </p>`;
+        return `<h3>ENGLER UPSETS BLANCHARD TO WIN THE GOVERNOR TITLE!!!</h3> <p>Governor Blanchard, you either screwed up badly or your scandals destroyed your entire campaign. This is considered one of the biggest upsets since Harry Truman won the election of 1948. You were leading by 15 points in August, but Engler had the upperhand. Either way, your political career is not over. You could go on to do something else or retire. The choice is up to you, Good Luck! </p>`;
     }
 
     setImage("https://i.imgur.com/H1A6F4Y.png");
-    return `<h3>BLANCHARD RE-ELECTED TO A THIRD TERM!!!</h3><p>Despite the scandals that affected your campaign, you have still won the election. You can now continue your tenure as governor without having to move out of the Governor's Mansion. But what you do in your third term is your choice. Good Luck!</p>`;
+    return `<h3>BLANCHARD RE-ELECTED TO A THIRD TERM!!!</h3><p>Despite the scandals that affected your campaign, you have still won the election. You can now continue your tenure as governor without having to move out of the Governor's Mansion. But what you do in your third term is your choice. There is even some very early dicussion tonight that you might be headed for a bid for the Presidency in 1992, but given Bush's popularity, the election already seems like a forgone conclusion. But regardless, you have a job to do now! Good Luck!</p>`;
 }
 
 
